@@ -5,49 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/test.css') }}">
     <title>Ship Engine Room Simulator</title>
-  </head>
+</head>
 <body>
     <br>
     <br>
     <br>
     <div class="container">Ship Engine Room Simulator</div>
     <br>
- 
-    <div class="b1">      
-      <div Class="b2">Main Engine</div>        
-      <div Class="b3">     
-        <div Class="b4">
-          <div>L.O Pressure</div>
-          <div>L.O Temp</div>
-          <div>Jacket Pressure</div>
-          <div>Jacket Temp</div>
-          </div>
-        <div Class="b5">
-          <div class="display" id="display1">0</div>
-          <div class="display" id="display2">0</div>
-          <div class="display" id="display3">0</div>
-          <div class="display" id="display4">0</div>
-          </div>
-        </div>
-        <div Class="b6">  
-          <div id="alarm"></div>  
-          </div> 
-      </div>
 
+    <div class="b1">      
+        <div class="b2">Main Engine</div>        
+        <div class="b3">     
+            <div class="b4">
+                <div>L.O Pressure</div>
+                <div>L.O Temp</div>
+                <div>Jacket Pressure</div>
+                <div>Jacket Temp</div>
+                <div>F.O Pressure</div>
+                <div>F.O Temp</div>
+                <div>Exh. Gas Temp</div>
+                <div>SCAV. Air Pressure</div>
+                <div>SCAV. Air Temp</div>
+                <div>ME RPM</div>
+            </div>
+            <div class="b5">
+                <div class="display" id="display1">0</div>
+                <div class="display" id="display2">0</div>
+                <div class="display" id="display3">0</div>
+                <div class="display" id="display4">0</div>
+                <div class="display" id="display5">0</div>
+                <div class="display" id="display6">0</div>
+                <div class="display" id="display7">0</div>
+                <div class="display" id="display8">0</div>
+                <div class="display" id="display9">0</div>
+                <div class="display" id="display10">0</div>
+
+            </div>
+        </div>
+        <div class="b6">  
+            <div id="alarm1"></div>  
+            <div id="alarm2"></div>
+            <div id="alarm3"></div> 
+            <div id="alarm4"></div> 
+            <div id="alarm5"></div>   
+            <div id="alarm6"></div> 
+            <div id="alarm7"></div> 
+            <div id="alarm8"></div> 
+            <div id="alarm9"></div>
+            <div id="alarm10"></div>  
+
+        </div> 
     </div>
     <br>
     <div class="buttons-container">
-      <div class="buttons">
-          <p>Main Engine</p>
-          <button id="button1">Run</button>
+        <div class="buttons">
+            <p>Main Engine</p>
+            <button id="button1">Run</button>
+        </div>
+        <div class="buttons">
+            <p>S.W Pump</p>
+            <button id="button2">No.1</button>
+            <button id="button3">No.2</button>
+        </div>
+        <div class="buttons">
+          <p>L.T Pump</p>
+          <button id="button4">No.1</button>
+          <button id="button5">No.2</button>
+      </div>
+        <div class="buttons">
+          <p>H.T Pump</p>
+          <button id="button6">No.1</button>
+          <button id="button7">No.2</button>
       </div>
       <div class="buttons">
-          <p>Main S.W Pump</p>
-          <button id="button2">No.1</button>
-          <button id="button3">No.2</button>
-      </div>
+        <p>F.O CIRC Pump</p>
+        <button id="button8">No.1</button>
+        <button id="button9">No.2</button>
+    </div>
+    <div class="buttons">
+        <p>F.O SUPPLY Pump</p>
+        <button id="button10">No.1</button>
+        <button id="button11">No.2</button>
+    </div>
+    <div class="buttons">
+        <p>L.O Pump</p>
+        <button id="button12">No.1</button>
+        <button id="button13">No.2</button>
+    </div>
+
+    </div>
     <br>
-  
 
     <script src="{{ url_for('static', filename='js/test.js') }}"></script>
 </body>
